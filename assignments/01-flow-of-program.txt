@@ -13,6 +13,39 @@
 
 
 2. Take two numbers and print the sum of both.
+
+    a.Start
+    b.Input num1 , num2
+    c.Declare sum variable
+    d.sum = num1 + num2
+    e.print sum
+    f.stop
+
 3. Take a number as input and print the multiplication table for it.
+
+    a.Start
+    b.Input num
+    c.declare i number
+    d.if i < 11
+        print num * i = result 
+        E.g 1 * 1 = 1;
+        i = i + 1 
+        Go to step d
+    e.Stop
+
+
 4. Take 2 numbers as inputs and find their HCF and LCM.
 5. Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all.
+
+    a.Start
+    b.Declare list
+    c.Ask Input
+        input valid and x exit
+        input valid and number 
+            add number to list
+            go to c
+        input invalid 
+            print invaid message
+            go to c
+    d.print list sum
+    e.Stop
