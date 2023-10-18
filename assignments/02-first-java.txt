@@ -1,0 +1,110 @@
+# [Video Link](https://youtu.be/TAtrPoaJ7gc)
+
+## Write Java programs for the following:
+
+1. Write a program to print whether a number is even or odd, also take
+input from the user.
+
+    a.Start
+    b.Input num
+    c.If num % 2 == 0
+        print "Even" exit
+    d.Print "Odd"
+    e.Stop
+
+
+2. Take name as input and print a greeting message for that particular name.
+
+    a.Start
+    b.Input text
+    c.Print Hello and text
+    d.Exit
+
+3. Write a program to input principal, time, and rate (P, T, R) from the user and
+find Simple Interest.
+
+    a.Start
+    b.Input principle, rate, interest
+    c.print (p * t * r) / 100
+    d.Stop
+
+
+4. Take in two numbers and an operator (+, -, *, /) and calculate the value.
+(Use if conditions)
+
+    a.Start
+    b.Input num1 , num2 and operator together
+    c.If Add
+        print num1 + num2
+    d.If Multiply
+        print num1 * num2
+    e.If Substract 
+        print num1 - num2
+    f.If divide 
+        print num1
+        / num2
+        Else
+            print invalid 
+    g.Exit
+    h.Stop
+
+5. Take 2 numbers as input and print the largest number.
+
+    a.Start
+    b.Input num1 , num2
+    c.If num1 > num2
+        print num1 exit
+    d.Print num2
+    e.Stop
+
+    
+6. Input currency in rupees and output in USD.
+
+    a.Start
+    b.input decimal num, output decimal
+    c.output is num * .012(dollar rate)
+    d.print output
+    e.Exit
+
+7. To calculate Fibonacci Series up to n numbers.
+
+    a.Start
+    b.num, list with 0,1
+    c.if list last number <= num
+        list add last number + second last number
+        go to c
+    d.print list numbers
+    e.exit
+
+8. To find out whether the given String is Palindrome or not.
+
+    a.Start
+    b.text , -reverseText  //- is declare
+    c.convert text to list
+    d.reverse the list
+    e.join the list
+    f.compare text and @reverseText
+    g.Equal 
+        print Is Palindrome exit
+    h.print not Palindrome
+    g.Stop
+
+9. To find Armstrong Number between two given number.
+
+    We are testing with single number for now
+
+    a.Start
+    b.num , -sum
+    c.num to list
+    d.check list
+        -item = current item
+             if 1 < list length
+                item = item * current item;
+        sum + item
+    e num = sum 
+        print Armstrong number
+        exit
+    f.print Not Armstrong
+    g.Stop
+    
+
