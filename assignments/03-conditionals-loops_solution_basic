@@ -1,0 +1,160 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicJava.AddNum(4,5);
+        //BasicJava.PrintHighNumber();
+        //BasicJava.PrintSum();
+        //BasicJava.FactorialNumber(48);
+        //System.out.println(BasicJava.leetCodeProductAndSum(234)) ;
+        //BasicJava.Fibonacchi(7);
+        //BasicJava.CubeArea(4);
+        //BasicJava.VolumneOfCylinder(new double[]{2,34});
+        //BasicJava.VolumneOfPrism(new double[]{3,4,5});
+        //BasicJava.VolumneOfCone(3,6);
+        //BasicJava.PerimeterOfRhombus(2);
+        //BasicJava.PerimeterOfSquare(5);
+        //BasicJava.PerimeterOfRectangle(1,3);
+        //BasicJava.PerimeterOfParallelogram(4, 9);
+        //BasicJava.PerimeterOfEquilateralTriangle(4);
+        //BasicJava.PerimeterOfCircle(5);
+        //BasicJava.AreaOfEquilateralTriangle(5);
+        //BasicJava.AreaOfRombus(23,43);
+        //BasicJava.AreaOfParallelogram(3,6);
+        //BasicJava.AreaIsoscelesTriangle(2.2,2);
+        //BasicJava.AreaOfRectangle(2.3, 5.6);
+        //BasicJava.AreaOfTrangle(2.2,2);
+        //BasicJava.AreaOfCircle(3);
+    }
+
+
+}
+
+
+public class BasicJava {
+    public  static  void AddNum(int one , int two){
+        System.out.println(one + two);
+    }
+    public  static  void PrintHighNumber(){
+        int input = 0, highNumber = 0;
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.print("Enter number :");
+
+            input = scanner.nextInt();
+            if(input != 0){
+                if(input > highNumber){
+                    highNumber = input;
+                }
+            }
+        } while (input != 0);
+
+        System.out.println(highNumber);
+    }
+    public  static  void PrintSum(){
+        Scanner s = new Scanner(System.in);
+        int sum = 0;
+        int num = 0;
+        do {
+            System.out.print("Enter number to add :");
+            num = s.nextInt();
+            sum += num;
+        } while (num != 0);
+
+        System.out.println(sum);
+    }
+    public static void FactorialNumber(int num){
+        for(int i = 1 ; i <= num ; i++){
+            if(num % i == 0){
+                System.out.print(i + " ");
+            }
+        }
+    }
+    public static int leetCodeProductAndSum(int n){
+        int product = 1;
+        int sum = 0;
+        int length = Integer.toString(n).length();
+
+        for(int i = 0; i < length; i++){
+            int lastNum = n % 10;
+            product *= lastNum;
+            sum += lastNum;
+            n = n/10;
+        }
+        return product - sum;
+    }
+    public  static  void Fibonacchi(int times){
+        int a = 0;
+        int b = 1;
+        for (int i = 2; i <= times ; i++ ) {
+            if(a == 0 && b ==1){
+                System.out.print(a + " ");
+                System.out.print(b + " ");
+            }
+            int temp = a;
+            a = b;
+            b = temp + b;
+            System.out.print(b + " ");
+
+        }
+    }
+    public  static  void CubeArea(double length){
+        System.out.println(6 * length * length);
+    }
+    public  static  void VolumneOfCylinder(double[] item){
+        double Pi = 3.14159;
+        System.out.println(Pi * item[0] * item[0] * item[1]);
+    }
+    public  static  void VolumneOfPrism(double[] item){
+        System.out.println(item[0] * item[1] * item[2]);
+    }
+    public  static void VolumneOfCone(double radius, double height){
+        double Pi = 3.14159;
+        System.out.println(Pi * radius * radius * height/3);
+    }
+    public  static  void PerimeterOfRhombus(double side){
+        PerimeterOfSquare(side);
+    }
+    public  static void PerimeterOfSquare(double side){
+        System.out.println(4 * side);
+    }
+    public  static void PerimeterOfRectangle(double length, double width){
+        PerimeterOfParallelogram(length, width);
+    }
+    public  static void PerimeterOfParallelogram(double base, double side){
+
+        System.out.println(2 * (base + side));;
+    }
+    public  static void PerimeterOfEquilateralTriangle(double radius){
+
+        System.out.println(3 * radius);
+    }
+    public  static void PerimeterOfCircle(double radius){
+        double Pi = 3.14159;
+        System.out.println(2 * Pi * radius);
+    }
+    public  static  void AreaOfEquilateralTriangle(double input){
+       System.out.println(Math.sqrt(3)/4 * input * input);
+    }
+    public  static  void AreaOfRombus(double diagonal1, double diagonal2){
+        AreaOfTrangle(diagonal1, diagonal2);
+    }
+    public  static  void AreaOfParallelogram(double length, double breadth){
+        BasicJava.AreaOfRectangle(length, breadth);
+    }
+    public  static void AreaIsoscelesTriangle(double height, double breadth){
+        AreaOfTrangle(height,breadth);
+    }
+    public static void AreaOfRectangle(double length, double breadth){
+        System.out.println(length * breadth);
+    }
+    public  static void AreaOfTrangle(double height, double breadth){
+        System.out.println((height * breadth)/2);
+    }
+    public static void AreaOfCircle(double radius) {
+        double Pi = 3.14159;
+        System.out.println(Pi * radius * radius);
+    }
+
+}
+
